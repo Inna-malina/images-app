@@ -8,7 +8,7 @@ let mainSection = document.querySelector('.main__section');
 
 
 async function getData() {
-    let url = `https://api.unsplash.com/search/photos?query=${input.value}&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo`;
+    let url = `https://api.unsplash.com/search/photos?query=${input.value}&client_id=P0dh6fg8wPyIw3B8dV5qHsrSAR-Mq_s7Xq7nCKx8r9s`;
 
     const res = await fetch(url);
     const data = await res.json();
@@ -41,7 +41,7 @@ async function getData() {
 }
 
 async function getDataRandom() {
-    let url = `https://api.unsplash.com/search/photos?query=car&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo`;
+    let url = `https://api.unsplash.com/search/photos?query=car&client_id=P0dh6fg8wPyIw3B8dV5qHsrSAR-Mq_s7Xq7nCKx8r9s`;
 
     const res = await fetch(url);
     const data = await res.json();
