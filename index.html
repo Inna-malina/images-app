@@ -8,9 +8,12 @@
     <title>API foto gallery progect</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,13 +24,16 @@
                     <div class="header__fotobox-img"></div>
                     <a href="#" class="header__fotobox-title">
                         <h1>
-                            Foto Gallery API
+                            Photo Gallery API
                         </h1>
                     </a>
                 </div>
                 <div class="header__inputbox">
-                    <input type="text" value="" placeholder="sirch foto">
-                    <button>button</button>
+                    <input type="text" value="" placeholder="search photo" autofocus autocomplete="off">
+                    <div class="button__box">
+                        <img class="button__clear" src="/images/cancel.svg" alt="search">
+                        <img class="button__search" src="/images/search_icon.png" alt="search">
+                    </div>
                 </div>
 
             </div>
@@ -38,7 +44,7 @@
                 </div>
             </div>
         </main>
-        <footer class="section__footer">
+        <footer class="footer__section">
             <div class="footer__section-contaner center">
                 <div class="contaner__footer-box footer__box">
                     <ul class="footer__box-years">

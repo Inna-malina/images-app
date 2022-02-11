@@ -2,11 +2,12 @@ body {
     margin: 0px;
     padding: 0px;
     /* font-family: 'Akaya Telivigala', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 .main__gallery-contaner {
     width: 100%;
-    background-color: rgb(153, 153, 153);
+    /* background-color: rgb(153, 153, 153); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,10 +17,10 @@ body {
 .gallery-img {
     cursor: pointer;
     display: block;
-    width: 380px;
-    height: 214px;
+    width: 500px;
+    height: 300px;
     /* margin: 20px; */
-    background-color: aquamarine;
+    background-color: rgb(231, 231, 231);
     background-position: center;
     object-fit: cover;
     border-radius: 2px;
@@ -49,6 +50,7 @@ body {
 .center {
     max-width: 1440px;
     margin: 0px auto;
+    padding: 0px 20px;
 }
 
 .header__fotobox {
@@ -61,13 +63,14 @@ body {
     margin: 0px 20px 0px 0px;
 }
 
-.header__inputbox {}
+
 
 
 .header__fotobox-img {
     background: url('/images/logo.svg');
     width: 50px;
     height: 50px;
+    background-size: contain;
     transition: all 0.2s ease;
 }
 
@@ -90,28 +93,144 @@ body {
     color: #fee1cf;
 }
 
+.header__inputbox {
+    position: relative;
+    height: 40px;
+}
+
+.header__inputbox input {
+    position: relative;
+    z-index: 9;
+    display: block;
+    outline: none;
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.button__box {
+    position: relative;
+
+    display: flex;
+    top: -40px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button__search {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+    border: none;
+    object-fit: none;
+    background-repeat: no-repeat;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button__clear {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 26px;
+    opacity: 0.5;
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+    border: none;
+    background-repeat: no-repeat;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.button__clear:hover {
+    opacity: 1;
+
+
+}
+
+.visible {
+    z-index: 10;
+}
+
+.header__inputbox .button img {
+    display: block;
+}
+
 /* ------main----- */
 
-.main__section {}
+.main__section {
+    padding: 20px 0px;
+}
 
 .main__section-contaner {}
 
 
 /* ------footer----- */
-.section__footer {}
+.footer__section {
+    background: #8295c7;
+}
 
 .footer__section-contaner {}
 
-.contaner__footer-box {}
+.contaner__footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
 
 .footer__box {}
 
-.footer__box-years {}
+.footer__box-years {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
 
-.year__item {}
+.footer__box-years>:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+}
+
+.year__item a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.year__item a:hover {
+    color: #fee1cf;
+}
 
 .footer__box-stadies {}
 
-.footer__box-stadies__item {}
+.footer__box-stadies__item a {
+    display: block;
+    background: url('/images/rs_school_js.svg');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px;
+    filter: invert();
+    transition: all 0.2s ease;
+}
 
-.stadies__item {}
+.footer__box-stadies__item a:hover {
+    filter: invert(76%) sepia(25%) saturate(318%) hue-rotate(314deg) brightness(111%) contrast(99%);
+}
