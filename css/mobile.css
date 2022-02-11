@@ -1,0 +1,75 @@
+@media(max-width: 830px) {
+    .header__fotobox-title {
+        font-size: 12px;
+    }
+
+    .header__fotobox-img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media(max-width: 725px) {
+
+    .header__section {
+        padding: 10px;
+    }
+
+    .header__fotobox-title {
+        display: none;
+    }
+
+    .header__fotobox-img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media(max-width: 570px) {
+    .gallery-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .header__inputbox input {
+        width: 280px;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .header__fotobox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__section-contaner {
+        display: block;
+    }
+
+    .header__fotobox-title {
+        display: block;
+    }
+
+    .header__inputbox input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .footer__box-stadies__item a {
+        width: 150px;
+    }
+}
+
+@media (max-width: 340px) {
+    .gallery-img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .footer__box-stadies__item a {
+        width: 100px;
+    }
+}
