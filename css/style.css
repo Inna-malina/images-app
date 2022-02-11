@@ -1,25 +1,117 @@
-.gallery-contaner {
+body {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Akaya Telivigala', cursive; */
+}
+
+.main__gallery-contaner {
     width: 100%;
     background-color: rgb(153, 153, 153);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .gallery-img {
     cursor: pointer;
-    width: 200px;
-    height: 100px;
-    margin: 20px;
+    display: block;
+    width: 380px;
+    height: 214px;
+    /* margin: 20px; */
     background-color: aquamarine;
-    border: 2px solid rgb(255, 255, 255);
+    background-position: center;
+    object-fit: cover;
+    border-radius: 2px;
     transition: all 0.2s ease;
 
 }
 
-/* .gallery-img:hover {
-    transform: scale(3);
-    transition: all 0.2s ease;
-} */
 
 .gallery-img-big {
-    transform: scale(3);
+    transform: scale(1.5);
     transition: all 0.2s ease;
 }
+
+.wrapper {}
+
+/* ------header----- */
+.header__section {
+    background: #8295c7;
+}
+
+.header__section-contaner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.header__fotobox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__fotobox>:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+}
+
+.header__inputbox {}
+
+
+.header__fotobox-img {
+    background: url('/images/logo.svg');
+    width: 50px;
+    height: 50px;
+    transition: all 0.2s ease;
+}
+
+.header__fotobox-img:hover {
+    filter: invert(20%) sepia(25%) saturate(318%) hue-rotate(312deg) brightness(111%) contrast(99%);
+}
+
+
+.header__fotobox-title {
+    cursor: pointer;
+    display: block;
+    font-family: 'Akaya Telivigala', cursive;
+    color: white;
+    transition: color 0.2s ease;
+    text-decoration: none;
+
+}
+
+.header__fotobox-title:hover {
+    color: #fee1cf;
+}
+
+/* ------main----- */
+
+.main__section {}
+
+.main__section-contaner {}
+
+
+/* ------footer----- */
+.section__footer {}
+
+.footer__section-contaner {}
+
+.contaner__footer-box {}
+
+.footer__box {}
+
+.footer__box-years {}
+
+.year__item {}
+
+.footer__box-stadies {}
+
+.footer__box-stadies__item {}
+
+.stadies__item {}

@@ -1,7 +1,9 @@
-let galleryContainer = document.querySelector('.gallery-contaner');
+let galleryContainer = document.querySelector('.main__gallery-contaner');
 let input = document.querySelector('input');
 let button = document.querySelector('button');
 // let images = document.querySelectorAll('.gallery-img');
+
+
 
 async function getData() {
     let url = `https://api.unsplash.com/search/photos?query=${input.value}&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo`;
@@ -35,6 +37,35 @@ async function getData() {
         });
     });
 }
+
+async function getDataRandom() {
+    let url = `https://api.unsplash.com/search/photos?query=car&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo`;
+
+    const res = await fetch(url);
+    const data = await res.json();
+
+    for (let key in data) {
+        let arr = data[key];
+
+        for (let key in arr) {
+            let elem = arr[key].urls.regular;
+
+            const img = `<img class="gallery-img" src="${elem}" alt="image">`;
+            galleryContainer.insertAdjacentHTML('beforeend', img);
+        }
+    }
+
+    let images = document.querySelectorAll('.gallery-img');
+    images.forEach(function (elem) {
+
+        elem.addEventListener('click', function () {
+
+            elem.classList.toggle('gallery-img-big');
+            console.log('qwer');
+        });
+    });
+}
+getDataRandom();
 
 
 button.addEventListener('click', function () {
